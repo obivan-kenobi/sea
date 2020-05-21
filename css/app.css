@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ba-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.ba-container__bg {
+  background-color: #4d98a4;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.ba-header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.ba-header__info .ba-logo__text {
+  font-family: "Cherry Swash", cursive;
+  font-weight: 400;
+}
+.ba-header__info .ba-menu .ba-nav .ba-navig {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-transform: uppercase;
+}
+.ba-header__info .ba-menu .ba-nav .ba-navig__link {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.ba-header__info .ba-menu .ba-nav .ba-navig__link:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.ba-header__info .ba-menu .ba-nav .ba-navig__item + ::before {
+  content: "/";
+  padding: 0 2px 0 8px;
+}
+
+.ba-head__info {
+  background-image: url(../images/bg.PNG);
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+
+.ba-title__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  color: #fff;
+  opacity: 0.9;
+}
+.ba-title__info .ba-title {
+  font-size: 55px;
+  width: 560px;
+  text-align: center;
+}
+.ba-title__info .ba-btn {
+  min-width: 135px;
+  height: 50px;
+  color: #fff;
+  padding: 0 32px;
+  display: inline-flex;
+  background-color: inherit;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #fff;
+  border-radius: 5%;
+  -webkit-appearance: none;
+  transition: 0.3s;
+}
+.ba-title__info .ba-btn:hover {
+  opacity: 0.8;
+}
+.ba-title__info .ba-scroll__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.ba-title__info .ba-scroll__item {
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  background-color: #fff;
+  margin: 0 10px;
+  margin-top: 70px;
+  cursor: pointer;
+}
+.ba-title__info .ba-scroll__item:hover, .ba-title__info .ba-scroll__item:active, .ba-title__info .ba-scroll__item:focus {
+  opacity: 0.5;
+}
