@@ -24,6 +24,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  margin: 0 128px;
 }
 .ba-header__info .ba-logo__text {
   font-family: "Cherry Swash", cursive;
